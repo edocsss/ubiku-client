@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- http://stackoverflow.com/questions/29887722/error-rendering-problems-the-following-classes-could-not-be-found-android-suppo -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="RegisterTheme" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+
+    <!-- BUTTONS -->
+    <style name="button_base" parent="Widget.AppCompat.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size</item>
+    </style>
+
+    <style name="button_primary" parent="@style/button_base">
+        <item name="android:background">@drawable/button_primary_color</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button_borderless_login_form" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+
+
+    <!-- TEXTINPUTLAYOUT -->
+    <style name="text_input_layout_error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/edittextError</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <!-- SEARCH ACTIVITY BAR THEME -->
+    <style name="search_request_top_bar_imagebutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+</resources>

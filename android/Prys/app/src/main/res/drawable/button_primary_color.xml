@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- http://stackoverflow.com/questions/17189715/android-button-color-changing-on-onclick -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable="@color/primaryButtonPressedColor" />
+
+    <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@color/primaryButtonPressedColor" />
+
+    <item
+        android:state_enabled="false"
+        android:state_focused="false"
+        android:state_pressed="false"
+        android:drawable="@color/primaryButtonDisabledColor" />
+
+    <item android:drawable="@color/primaryButtonNormalColor" />
+</selector>
